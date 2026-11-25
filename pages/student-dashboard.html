@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Student dashboard | MelodyNest</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#b59b5d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <script>document.documentElement.classList.add("js","mn-loading"); try { if (localStorage.getItem("music-dir") === "rtl") { document.documentElement.dir = "rtl" } } catch (e) { }</script>
+    <script src="../assets/js/auth.js"></script><noscript>
+        <style>
+            body.dash-body:not(.auth-ok) {
+                visibility: visible
+            }
+        </style>
+    </noscript>
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+<noscript><style>#mn-preloader{display:none!important}html.mn-loading,html.mn-loading body{overflow:auto!important}</style></noscript>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+</head>
+
+<body class="dash-body" data-guard="student">
+    <div id="mn-preloader" role="status" aria-label="Loading MelodyNest" aria-live="polite">
+        <div class="mn-loader-inner">
+            <div class="mn-loader-mark" aria-hidden="true"><img src="../assets/images/melodynest-logo.png" alt=""></div>
+            <div class="mn-equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="mn-loader-bar" aria-hidden="true"><i></i></div>
+            <div class="mn-loader-name">MelodyNest</div>
+            <div class="mn-loader-caption">FIND YOUR RHYTHM</div>
+        </div>
+    </div>
+    <div class="dx-app">
+        <aside class="dx-side" id="dxSide" aria-label="Dashboard navigation"><a class="dx-brand" href="index.html"><img src="../assets/images/melodynest-logo.png" alt="MelodyNest" class="dx-logo-img"></a>
+            <div class="dx-me"><span class="dx-av" data-u-ini>·</span>
+                <div><b data-u-name>…</b><small>Student</small></div>
+            </div>
+            <nav class="dx-nav" aria-label="Student menu"><a href="#overview" data-nav="overview"><svg
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                    </svg><span>Overview</span></a><a href="#courses" data-nav="courses"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 18V5l12-2v13" />
+                        <circle cx="6" cy="18" r="3" />
+                        <circle cx="18" cy="16" r="3" />
+                    </svg><span>My courses</span></a><a href="#schedule" data-nav="schedule"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="17" rx="2" />
+                        <path d="M3 9h18M8 2v4M16 2v4" />
+                    </svg><span>Class schedule</span></a><a href="#progress" data-nav="progress"><svg
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 3v18h18" />
+                        <path d="M7 15l4-4 3 3 6-7" />
+                    </svg><span>My progress</span></a><a href="#payments" data-nav="payments"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="5" width="20" height="14" rx="2" />
+                        <path d="M2 10h20" />
+                    </svg><span>Fee payments</span></a><a href="#profile" data-nav="profile"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                    </svg><span>My profile</span></a></nav>
+            <div class="dx-side-foot"><a class="dx-out" href="index.html" style="color:#cfcfcf"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 11l9-8 9 8v10a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z" />
+                    </svg><span>Back to website</span></a><button class="dx-out" type="button" data-logout><svg
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg><span>Log out</span></button></div>
+        </aside>
+        <div class="dx-overlay" id="dxOverlay"></div>
+        <div class="dx-main">
+            <header class="dx-top"><button class="dx-ib dx-burger" id="dxBurger" type="button"
+                    aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg></button><span class="dx-ptitle" id="dxTitle">Overview</span>
+                <div class="dx-search"><input id="dxSearch" type="search" placeholder="Search…" autocomplete="off"
+                        aria-label="Search dashboard"><kbd>/</kbd>
+                    <div class="dx-results" id="dxResults" hidden></div>
+                </div>
+                <div class="dx-top-r"><button class="dx-ib pill" type="button" data-rtl-toggle aria-pressed="false"
+                        aria-label="Toggle right-to-left layout">RTL</button><button class="dx-ib" type="button"
+                        data-theme-toggle aria-label="Toggle dark mode">☾</button>
+                    <div data-dd><button class="dx-ib" type="button" data-dd-btn aria-expanded="false"
+                            aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8M13.7 21a2 2 0 01-3.4 0" />
+                            </svg><span class="dx-dot" id="dxBellDot" hidden>0</span></button>
+                        <div class="dx-menu" id="dxBellMenu">
+                            <header><span>Notifications</span><button type="button" id="dxMarkRead">Mark all
+                                    read</button></header>
+                            <div id="dxBellList"></div>
+                        </div>
+                    </div>
+                    <div data-dd><button class="dx-prof" type="button" data-dd-btn aria-expanded="false"
+                            aria-label="Account menu"><span class="dx-av" data-u-ini>·</span><span class="nm"
+                                data-u-name>…</span></button>
+                        <div class="dx-menu"><a href="#profile" data-go="profile"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                                </svg>My profile</a><a href="index.html"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 11l9-8 9 8v10a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z" />
+                                </svg>Back to website</a>
+                            <hr><button class="it" type="button" data-logout><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
+                                </svg>Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="dx-content" id="dxContent" aria-live="polite"></main>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dx.js"></script>
+    <script src="../assets/js/student.js"></script>
+    <script src="../assets/js/preloader.js"></script>
+</body>
+
+</html>

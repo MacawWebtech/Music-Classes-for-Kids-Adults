@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Music courses | MelodyNest Music Academy</title>
+    <meta name="description" content="Explore guitar, keyboard, vocal and drum classes for all skill levels.">
+    <meta name="theme-color" content="#b59b5d">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/redesign.css">
+    <link rel="stylesheet" href="../assets/css/fixes.css">
+    <script src="../assets/js/auth.js"></script>
+    <script>document.documentElement.classList.add("js","mn-loading"); try { if (localStorage.getItem("music-dir") === "rtl") { document.documentElement.dir = "rtl" } } catch (e) { }</script>
+    <link rel="stylesheet" href="../assets/css/preloader.css">
+<noscript><style>#mn-preloader{display:none!important}html.mn-loading,html.mn-loading body{overflow:auto!important}</style></noscript>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+</head>
+
+<body>
+    <div id="mn-preloader" role="status" aria-label="Loading MelodyNest" aria-live="polite">
+        <div class="mn-loader-inner">
+            <div class="mn-loader-mark" aria-hidden="true"><img src="../assets/images/melodynest-logo.png" alt=""></div>
+            <div class="mn-equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="mn-loader-bar" aria-hidden="true"><i></i></div>
+            <div class="mn-loader-name">MelodyNest</div>
+            <div class="mn-loader-caption">FIND YOUR RHYTHM</div>
+        </div>
+    </div>
+    <header class="mn-header">
+        <div class="container mn-bar"><a class="mn-brand" href="index.html" aria-label="MelodyNest home"><img src="../assets/images/melodynest-logo.png" alt="MelodyNest — Music Classes for Kids &amp; Adults" class="mn-logo-img"></a>
+            <nav class="mn-nav" id="mn-nav" aria-label="Main navigation">
+                <div class="mn-dd"><a href="index.html"><span>Home</span> <em>⌄</em></a>
+                    <div class="mn-dd-menu"><a href="index.html"><span class="n">01</span><span><strong>Home 1 · Main</strong><small>The classic, balanced
+                                    layout</small></span></a><a href="home2.html"><span class="n">02</span><span><strong>Home 2 · Creative</strong><small>Bold, stage-inspired layout</small></span></a>
+                    </div>
+                </div><a href="about.html">About</a><a href="courses.html">Courses</a><a href="instructors.html">Teachers</a><a
+                    href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a
+                    class="mn-nav-extra" href="contact.html">Book a free trial ↗</a>
+            </nav>
+            <div class="mn-actions"><button class="mn-lang" type="button" data-rtl-toggle aria-pressed="false"
+                    aria-label="Toggle right-to-left layout"
+                    title="Right-to-left layout"><span>RTL</span></button><button class="mn-icon" type="button"
+                    data-theme-toggle aria-label="Toggle dark mode">☾</button><a class="mn-icon mn-login"
+                    href="login.html" aria-label="Log in to your account" title="Log in"><svg width="19" height="19"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                    </svg></a><a class="mn-cta" href="contact.html"><b style="font-weight:800">Book a free trial</b><span>↗</span></a><button
+                    class="mn-burger" type="button" aria-label="Open navigation" aria-controls="mn-nav"
+                    aria-expanded="false"><span></span><span></span><span></span></button></div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero"><!-- BANNER BACKGROUND IMAGE: change the url(...) below to use another photo -->
+            <div class="banner-bg"
+                style="background-image:url('../assets/images/guitar\ studio.jpg')"
+                role="presentation"></div>
+            <div class="container">
+                <div class="breadcrumbs">Home / Courses</div><span class="eyebrow">FIND YOUR INSTRUMENT</span>
+                <h1>Choose what moves you.</h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="filters"><button class="filter active" data-filter="all">All courses</button><button
+                        class="filter" data-filter="strings">Guitar</button><button class="filter"
+                        data-filter="keys">Keyboard</button><button class="filter"
+                        data-filter="voice">Vocals</button><button class="filter" data-filter="rhythm">Drums</button></div>
+                <div class="cards">
+                    <article class="card" data-category="strings">
+                        <div class="course-art"><img
+                                src="../assets/images/img1.jpg"
+                                alt="Music lesson and instruments" loading="lazy"></div><span class="tag">BEGINNER TO
+                            ADVANCED</span>
+                        <h3>Guitar foundations</h3>
+                        <p>Chords, strumming, fingerstyle, and favourite songs.</p>
+                        <p><b>From 2 classes/week</b></p><a class="btn light" href="contact.html">Ask about guitar</a>
+                    </article>
+                    <article class="card" data-category="keys">
+                        <div class="course-art orange"><img
+                                src="../assets/images/Keyboard & piano.jpg"
+                                alt="Music lesson and instruments" loading="lazy"></div><span class="tag">ALL
+                            LEVELS</span>
+                        <h3>Keyboard & piano</h3>
+                        <p>Notes, scales, coordination, reading music, and melodies.</p>
+                        <p><b>From 2 classes/week</b></p><a class="btn light" href="contact.html">Ask about keyboard</a>
+                    </article>
+                    <article class="card" data-category="voice">
+                        <div class="course-art mint"><img
+                                src="../assets/images/mic3.jpg"
+                                alt="Music lesson and instruments" loading="lazy"></div><span class="tag">ALL
+                            LEVELS</span>
+                        <h3>Vocal training</h3>
+                        <p>Breath, pitch, expression, and confident singing.</p>
+                        <p><b>From 2 classes/week</b></p><a class="btn light" href="contact.html">Ask about vocals</a>
+                    </article>
+                    <article class="card" data-category="rhythm">
+                        <div class="course-art blue"><img
+                                src="../assets/images/Drums & rhythm.jpg"
+                                alt="Music lesson and instruments" loading="lazy"></div><span class="tag">BEGINNER TO
+                            ADVANCED</span>
+                        <h3>Drums & rhythm</h3>
+                        <p>Beats, timing, coordination, and playing with a band.</p>
+                        <p><b>From 2 classes/week</b></p><a class="btn light" href="contact.html">Ask about drums</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section rx-sec rx-info-ticket">
+            <div class="container"><span class="section-kicker">FIND YOUR STARTING POINT</span>
+                <h2 class="section-title">Choose a pace that feels right</h2>
+                <div class="rx-tickets">
+                    <div class="rx-ticket"><span class="rx-ticket-no">ADMIT ONE ·
+                            01</span><strong>Beginner</strong><span>Learn the basics with confidence</span></div>
+                    <div class="rx-ticket"><span class="rx-ticket-no">ADMIT ONE ·
+                            02</span><strong>Intermediate</strong><span>Build technique and consistency</span></div>
+                    <div class="rx-ticket"><span class="rx-ticket-no">ADMIT ONE ·
+                            03</span><strong>Advanced</strong><span>Refine expression and performance</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="section rx-sec rx-feat-timeline">
+            <div class="container"><span class="section-kicker">WHAT YOU CAN EXPECT</span>
+                <h2 class="section-title">Every course has a clear path</h2>
+                <ol class="rx-timeline">
+                    <li><span class="rx-dot">1</span>
+                        <h3>Learn foundations</h3>
+                        <p>Understand posture, technique, rhythm, and essential skills.</p>
+                    </li>
+                    <li><span class="rx-dot">2</span>
+                        <h3>Play real music</h3>
+                        <p>Apply what you learn to songs and practical exercises.</p>
+                    </li>
+                    <li><span class="rx-dot">3</span>
+                        <h3>Grow your confidence</h3>
+                        <p>Review progress and build towards your next milestone.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="section rx-sec rx-soft-columns">
+            <div class="container"><span class="section-kicker">CLASS DETAILS</span>
+                <h2 class="section-title">Know before you join</h2>
+                <div class="rx-cols rx-cols-dark">
+                    <div><span class="rx-colno">01</span><strong>Small batches</strong><span>Supportive group
+                            learning</span></div>
+                    <div><span class="rx-colno">02</span><strong>Flexible timings</strong><span>Ask about available
+                            slots</span></div>
+                    <div><span class="rx-colno">03</span><strong>Trial session</strong><span>Meet a teacher first</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section mx-sec mx-soft">
+            <div class="container">
+                <div class="mx-head mx-rv">
+                    <div><span class="section-kicker">WHY MELODYNEST</span>
+                        <h2>Everything you need to keep playing</h2>
+                    </div>
+                    <p>We designed every class around
+                        three things: clarity, community and confidence.</p>
+                </div>
+                <div class="mx-why mx-rv">
+                    <article data-n="01">
+                        <div class="ic">♫</div>
+                        <h3>Small, friendly groups</h3>
+                        <p>Batches small enough
+                            for real attention and big enough for real fun.</p>
+                    </article>
+                    <article data-n="02">
+                        <div class="ic">◷</div>
+                        <h3>Flexible batches</h3>
+                        <p>Weekday, weekend
+                            and evening slots that fit around school and work.</p>
+                    </article>
+                    <article data-n="03">
+                        <div class="ic">✎</div>
+                        <h3>Clear progress notes</h3>
+                        <p>Simple monthly feedback so
+                            you always know what to practise next.</p>
+                    </article>
+                    <article data-n="04">
+                        <div class="ic">★</div>
+                        <h3>Stage-ready confidence</h3>
+                        <p>Regular showcases turn
+                            nervous beginners into proud performers.</p>
+                    </article>
+                    <article data-n="05">
+                        <div class="ic">♪</div>
+                        <h3>Try before you choose</h3>
+                        <p>Not sure
+                            yet? Sample guitar, keys, drums or voice before you commit.</p>
+                    </article>
+                    <article data-n="06">
+                        <div class="ic">❤</div>
+                        <h3>Every age, every level</h3>
+                        <p>From curious kids
+                            to returning adults — no auditions, no pressure.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section mx-sec ">
+            <div class="container">
+                <div class="mx-head center mx-rv">
+                    <div><span class="section-kicker">SIMPLE PLANS</span>
+                        <h2>Pick the plan that fits your pace</h2>
+                    </div>
+                    <p>Sample fees — update to match
+                        your academy. No hidden costs.</p>
+                </div>
+                <div class="mx-plans mx-rv">
+                    <article class="mx-plan">
+                        <h3>Starter</h3>
+                        <div class="pr">₹1,499<small> / month</small></div>
+                        <p>For new learners exploring an instrument.</p>
+                        <ul>
+                            <li>8 group classes</li>
+                            <li>Beginner learning plan</li>
+                            <li>Monthly progress note</li>
+                        </ul><a class="btn light" href="contact.html">Get started →</a>
+                    </article>
+                    <article class="mx-plan pop"><span class="badge">MOST POPULAR</span>
+                        <h3>Growing</h3>
+                        <div class="pr">₹2,499<small> / month</small></div>
+                        <p>For learners ready to build real skill.
+                        </p>
+                        <ul>
+                            <li>12 classes a month</li>
+                            <li>Showcase performances</li>
+                            <li>Practice guides & feedback</li>
+                        </ul><a class="btn" href="contact.html">Get started →</a>
+                    </article>
+                    <article class="mx-plan">
+                        <h3>One-to-one</h3>
+                        <div class="pr">₹3,999<small> / month</small></div>
+                        <p>Private coaching shaped around your goals.</p>
+                        <ul>
+                            <li>Private weekly sessions</li>
+                            <li>Custom learning path</li>
+                            <li>Flexible scheduling</li>
+                        </ul><a class="btn light" href="contact.html">Get started →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section mx-sec ">
+            <div class="container">
+                <div class="mx-faq-wrap mx-rv">
+                    <div><span class="section-kicker">GOOD TO KNOW</span>
+                        <h2>Questions everyone asks</h2>
+                        <p style="color:#666;margin:0 0 26px">Can’t find
+                            your answer? Our team is happy to help.</p><a class="btn" href="contact.html">Talk to our team →</a>
+                    </div>
+                    <div class="mx-faq">
+                        <details open>
+                            <summary>Do I need any musical experience?</summary>
+                            <p>Not
+                                at all. Most of our learners start from zero. Your teacher builds a plan around where
+                                you are today.</p>
+                        </details>
+                        <details>
+                            <summary>What ages do you teach?</summary>
+                            <p>We welcome young
+                                children, teens and adults, with age-appropriate batches for each.</p>
+                        </details>
+                        <details>
+                            <summary>Can we try a class before joining?
+                            </summary>
+                            <p>Yes.
+                                Book a free trial, meet a teacher and see which instrument feels right.</p>
+                        </details>
+                        <details>
+                            <summary>Do I need to own an instrument?</summary>
+                            <p>Not at
+                                first. You can practise on academy instruments while you decide what to buy.</p>
+                        </details>
+                        <details>
+                            <summary>Can I change my batch later?</summary>
+                            <p>Of course. Let us know and we
+                                will move you to a slot that suits your week.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section rx-sec rx-cta-sec">
+            <div class="container">
+                <div class="rx-cta rx-cta-pill">
+                    <div class="rx-cta-copy"><span class="section-kicker">NEED A LITTLE HELP?</span>
+                        <h3>Tell us what kind of music you love.</h3>
+                        <p>We’ll suggest a course and level to get you started.</p>
+                    </div><a class="rx-circle" href="contact.html" aria-label="Get course advice →"><span>Get course
+                            advice</span><b>→</b></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="mn-foot-top">
+                <div><a class="mn-brand" href="index.html"><img src="../assets/images/melodynest-logo.png" alt="MelodyNest — Music Classes for Kids &amp; Adults" class="mn-logo-img"></a>
+                    <p style="margin-top:18px">A
+                        welcoming place to discover your sound, build confidence, and enjoy learning music at your own
+                        pace.</p>
+                    <div class="mn-foot-social"><a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a><a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.8h2.6l.4-3.1h-3V8.2c0-.9.3-1.5 1.6-1.5h1.6V3.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.8v3.1h2.7V21h3z"/></svg></a></div>
+                </div>
+                <div>
+                    <h3>Explore</h3><a href="courses.html">Our courses</a><a
+                        href="instructors.html">Meet the teachers</a><a href="pricing.html">Pricing</a><a href="gallery.html">Gallery</a>
+                </div>
+                <div>
+                    <h3>For students</h3><a href="login.html">Student
+                        login</a><a href="register.html">Join a class</a><a
+                        href="student-dashboard.html">Dashboard demo</a>
+                </div>
+                <div>
+                    <h3>Say hello</h3><a href="contact.html">Contact us</a><a
+                        href="tel:+919876543210">+91 98765 43210</a><a
+                        href="mailto:hello@melodynest.example">hello@melodynest.example</a>
+                </div>
+            </div>
+            <div class="copyright"><span>©
+                    2026 MelodyNest Music Academy. Demo template — replace sample details before launch.</span><span>♫
+                    Find your rhythm</span></div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/preloader.js"></script>
+</body>
+
+</html>

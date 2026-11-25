@@ -1,0 +1,54 @@
+
+/* MelodyNest redesigned sign-in */
+.mn-auth-section{padding-block:clamp(42px,6vw,82px);background:radial-gradient(circle at 8% 15%,rgba(181,155,93,.13),transparent 30%),var(--bg,#faf9f6)}
+.mn-auth-container{max-width:1060px!important}
+.mn-auth-card{display:grid;grid-template-columns:minmax(280px,.88fr) minmax(0,1.12fr);padding:0!important;overflow:hidden;border:1px solid rgba(181,155,93,.28)!important;border-radius:28px!important;box-shadow:0 24px 70px rgba(35,29,18,.10)!important}
+.mn-auth-visual{position:relative;display:flex;align-items:flex-end;min-height:660px;padding:42px;color:#fff;background:linear-gradient(180deg,rgba(15,15,15,.12),rgba(12,12,12,.88)),url('../images/Jam session.jpg') center/cover no-repeat}
+.mn-auth-visual:before{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.28);border-radius:18px;pointer-events:none}
+.mn-auth-visual-content{position:relative;z-index:1}
+.mn-auth-kicker{font-size:.68rem;letter-spacing:.19em;font-weight:800;color:#e3ca8b}
+.mn-auth-note{display:block;font-size:4rem;line-height:1;margin:28px 0 18px;color:#d0b36d}
+.mn-auth-visual h2{font-size:clamp(2rem,3.3vw,3.2rem);line-height:1.08;font-weight:800;color:#fff;margin:0 0 18px}
+.mn-auth-visual h2 em{font-family:Georgia,serif;font-weight:400;color:#e4c77e}
+.mn-auth-visual p{max-width:320px;color:rgba(255,255,255,.78);line-height:1.8}
+.mn-auth-visual-foot{margin-top:48px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25);font-size:.82rem;color:rgba(255,255,255,.75)}
+.mn-auth-visual-foot span{color:#e4c77e;font-size:1.3rem;margin-right:8px}
+.mn-auth-panel{padding:clamp(28px,4vw,54px);min-width:0}
+.mn-auth-panel>.center{text-align:left!important;margin-bottom:28px}
+.mn-auth-panel .eyebrow{color:#9b7d3e;letter-spacing:.17em;font-size:.72rem;font-weight:800}
+.mn-auth-panel h1{font-size:clamp(2rem,3vw,2.65rem)!important;line-height:1.12;margin:12px 0}
+.mn-auth-panel>.center p{color:#777;line-height:1.7}
+.mn-auth-panel .field{gap:8px}
+.mn-auth-panel .field label{font-size:.84rem;color:var(--ink,#222)}
+.mn-auth-panel .field input{min-height:52px;border-radius:12px;padding:13px 15px}
+.mn-auth-panel .auth-pw{position:relative}
+.mn-auth-panel .auth-pw input{padding-right:68px}
+.mn-auth-panel .auth-pw button{position:absolute;right:12px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#927536;font-size:.82rem;font-weight:800}
+.mn-auth-panel .auth-row{margin:13px 0 18px;font-size:.86rem;color:#686868}
+.mn-auth-panel #loginForm>.btn{min-height:54px;border-radius:13px;font-weight:800;letter-spacing:.01em;box-shadow:0 8px 20px rgba(181,155,93,.2)}
+.mn-auth-panel details{margin-top:17px!important}
+.mn-auth-panel details summary{font-size:.88rem;font-weight:700}
+.mn-auth-divider{display:flex;align-items:center;gap:14px;margin:25px 0 16px;color:#999;font-size:.65rem;font-weight:800;letter-spacing:.16em}
+.mn-auth-divider:before,.mn-auth-divider:after{content:"";height:1px;flex:1;background:var(--line,#e8e4dc)}
+.mn-social-logins{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mn-social-btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:10px 12px;border:1px solid #dedbd3;border-radius:12px;background:transparent;color:var(--ink,#222);font:700 .82rem Manrope,sans-serif;transition:background .2s,border-color .2s,transform .2s}
+.mn-social-btn:hover{background:rgba(181,155,93,.08);border-color:#b59b5d;transform:translateY(-2px)}
+.mn-social-btn svg{width:19px;height:19px;flex:0 0 19px}
+.mn-auth-register{margin:25px 0 0!important;color:#777;font-size:.88rem}
+.mn-auth-panel .auth-msg{margin-top:12px}
+body.dark .mn-auth-section{background:radial-gradient(circle at 8% 15%,rgba(181,155,93,.12),transparent 30%),#151515}
+body.dark .mn-auth-card{background:#202020;border-color:#3b3528!important}
+body.dark .mn-auth-panel>.center p,body.dark .mn-auth-register,body.dark .mn-auth-row{color:#bbb}
+body.dark .mn-auth-panel .field label{color:#eee}
+body.dark .mn-auth-panel .field input{background:#292929;color:#fff;border-color:#484848}
+body.dark .mn-social-btn{color:#f5f5f5;border-color:#4a463d}
+body.dark .mn-auth-divider:before,body.dark .mn-auth-divider:after{background:#48433a}
+@media(max-width:767px){
+ .mn-auth-card{grid-template-columns:1fr}
+ .mn-auth-visual{min-height:300px;padding:28px}
+ .mn-auth-visual:before{inset:12px}
+ .mn-auth-note{font-size:2.6rem;margin:16px 0 10px}
+ .mn-auth-visual-foot{margin-top:22px}
+ .mn-auth-panel{padding:28px 22px}
+}
+@media(max-width:420px){.mn-social-logins{grid-template-columns:1fr}.mn-auth-visual{min-height:280px}}
